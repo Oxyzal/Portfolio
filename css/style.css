@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
 :root {
   font-size: 16px;
+  color: white;
+}
+
+.red {
+  color: #f37814;
 }
 
 @font-face {
@@ -35,17 +40,21 @@
   margin-right: 6vw;
 }
 .desktop ul a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 1rem;
 }
 
 body {
-  background-color: eee;
+  background: #2d36fd;
+  background: linear-gradient(0deg, #2d36fd 0%, #22c1c3 100%);
+  background-position: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 
 .me {
-  background-color: #dff3ff;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -53,18 +62,61 @@ body {
 }
 .me .tout {
   display: flex;
-  width: 70%;
+  width: 80%;
   height: auto;
+  gap: 50px;
 }
 .me .tout .presentation {
   margin-top: 30vh;
+  width: 50%;
 }
 .me .tout .presentation h1 {
   font-size: 5rem;
 }
 .me .tout .presentation h2 {
+  font-size: 2rem;
   margin-left: 2%;
   font-weight: initial;
+}
+.me .tout .presentation p {
+  margin-top: 15px;
+  margin-left: 2%;
+}
+.me .tout .presentation .button {
+  display: flex;
+  margin-left: 2%;
+  margin-top: 20px;
+  gap: 15px;
+}
+.me .tout .presentation .button .btn {
+  background: transparent;
+  text-decoration: none;
+  padding: 10px 10px;
+  border-radius: 3px;
+  border: 2px solid white;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.me .tout .presentation .button .btn:hover {
+  border: 2px solid #f37814;
+  color: #f37814;
+}
+.me .tout .media {
+  display: flex;
+  margin-left: 2%;
+  margin-top: 60px;
+  justify-content: end;
+  gap: 10px;
+}
+.me .tout .matete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.me .tout .matete img {
+  margin: 0 auto;
+  width: 65%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -45,6 +45,10 @@
   font-size: 1rem;
 }
 
+.mobile {
+  display: none;
+}
+
 body {
   background: #2d36fd;
   background: linear-gradient(0deg, #2d36fd 0%, #22c1c3 100%);
@@ -117,6 +121,82 @@ body {
   margin: 0 auto;
   width: 65%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media (max-width: 700px) {
+  :root {
+    font-size: 11px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transform: rotate(0deg);
+    width: 50px;
+    position: absolute;
+    z-index: 2;
+    transition: 0.3s;
+  }
+
+  .rod {
+    width: 50px;
+    height: 8px;
+    border-radius: 20px;
+    background-color: white;
+  }
+
+  .mobile nav {
+    display: none;
+    width: 100%;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(26, 26, 26, 0.3);
+    opacity: 0.7;
+  }
+  .mobile nav li {
+    text-align: center;
+  }
+  .mobile nav li a {
+    display: block;
+    width: 100%;
+    background-color: #1a1a1a;
+    font-size: 30px;
+    text-decoration: none;
+    color: #bdbdbd;
+    padding: 3% 0;
+    text-align: center;
+  }
+  .mobile nav .mobile li:first-child {
+    padding-top: 125px;
+    background-color: #1a1a1a;
+  }
+
+  .tout {
+    flex-direction: column;
+    width: 700px !important;
+    align-items: center;
+    text-align: center;
+  }
+  .tout .presentation {
+    margin-top: 50px !important;
+  }
+  .tout .button {
+    justify-content: center;
+  }
+}
+.about {
+  background-color: azure;
 }
 
 /*# sourceMappingURL=style.css.map */

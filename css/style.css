@@ -125,7 +125,9 @@ body {
 }
 .me .tout .matete img {
   margin: 0 auto;
-  width: 65%;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
 }
 
 .test2 {
@@ -166,14 +168,20 @@ body {
   justify-content: center;
   gap: 50%;
 }
+@media screen and (max-width: 1024px) {
+  .s1 .s2 .containerlogo > div {
+    gap: 20%;
+  }
+}
 .s1 .s2 .containerlogo img {
   height: 50px;
 }
 .s1 .s2 img {
   opacity: 0.6;
   border-radius: 10px;
-  width: 50%;
+  width: 80%;
   object-fit: contain;
+  height: 500px;
 }
 .s1 .s2 p {
   width: 100%;
@@ -251,6 +259,32 @@ body {
 .competence .grid .content p {
   text-align: center;
   padding: 2%;
+}
+
+.contactme {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contactme h1 {
+  padding-top: 30vh;
+  font-size: 3rem;
+  text-align: center;
+}
+.contactme .form-style {
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+}
+.contactme .field-textarea {
+  height: 200px;
+  width: 400px;
+}
+@media screen and (max-width: 800px) {
+  .contactme .field-textarea {
+    height: 100px;
+    width: 200px;
+  }
 }
 
 footer {

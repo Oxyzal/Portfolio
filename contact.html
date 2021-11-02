@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <title>Madi Steven</title>
+</head>
+<body>
+    <header class="desktop">
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="index.html">About</a></li>
+                <li> <a href="index.html"></strong><span class='red' style='font-size: 1.5rem;'><strong>Experience</strong></span></a></li>
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/sliderburger.js"></script>
+    <header class="mobile">
+        <div class="burger">
+            <div class="rod"></div>
+            <div class="rod"></div>
+            <div class="rod"></div>
+        </div>
+        <nav class="test">
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="experience.html">Experience</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contactme">
+        <h1>Contactez-Moi</h1>
+        <form name="form" action="savecontact.php" method="POST">
+            <table class="form-style">
+                <tr>
+                    <td>
+                        <label>
+                            Votre nom <span class="required">*</span>
+                        </label>
+                    </td>
+                    <td>
+                        <input type="text" name="name_" class="long"/>
+                        <span class="error" id="errorname"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Votre adresse e-mail <span class="required">*</span>
+                        </label>
+                    </td>
+                    <td>
+                        <input type="email" name="mail" class="long"/>
+                        <span class="error" id="erroremail"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Message <span class="required">*</span>
+                        </label>
+                    </td>
+                    <td>
+                        <textarea name="message" class="long field-textarea"></textarea>
+                        <span class="error" id="errormsg"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Envoyer">      
+                        <input type="reset" value="Réinitialiser"> 
+                    </td>
+                </tr>
+                </table>
+            </form>
+        </section>
+    </body>
+</html> 

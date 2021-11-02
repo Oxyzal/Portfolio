@@ -116,7 +116,9 @@ body{
             align-items: center;
             img{
                 margin: 0 auto;
-                width: 65%;
+                width: 500px;
+                height: 500px;
+                object-fit: cover;
              }
         }
     }
@@ -155,6 +157,9 @@ body{
                 place-items: center;
                 justify-content: center;
                 gap: 50%;
+                @include for-tablets{
+                    gap: 20%;
+                }
             }
             img{
                 height: 50px;
@@ -163,8 +168,9 @@ body{
         img{
             opacity: 0.6;
             border-radius: 10px;
-            width: 50%;
+            width: 80%;
             object-fit: contain;
+            height: 500px;
         }
         p{
             width: 100%;
@@ -239,6 +245,30 @@ body{
         }
     }
 }
+.contactme{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        padding-top: 30vh;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .form-style{
+        display: flex;
+        justify-content: center;
+        padding-top: 10vh;
+    }
+    .field-textarea{
+        height: 200px;
+        width: 400px;
+        @include for-mobiles{
+            height: 100px;
+            width: 200px;
+        }
+    }
+}
+
 
 footer{
     background-color: black;

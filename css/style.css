@@ -9,6 +9,10 @@
   color: #f37814;
 }
 
+.boxshadow {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 @font-face {
   font-family: test;
   src: url(../assets/AbrilFatface-Regular.ttf);
@@ -26,8 +30,10 @@
   height: 55px;
   line-height: 6vh;
   z-index: 3;
-  box-shadow: 0 0 10px rgba(26, 26, 26, 0.5);
-  background-color: none;
+  background: rgba(177, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .desktop ul {
   display: flex;
@@ -60,7 +66,7 @@ body {
 
 .me {
   width: 100%;
-  height: 90vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -120,7 +126,6 @@ body {
 .me .tout .matete img {
   margin: 0 auto;
   width: 65%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .test2 {
@@ -174,30 +179,84 @@ body {
   width: 100%;
 }
 
-.test8 {
-  width: 50vw;
-  height: 100vh;
-  padding-top: 20vh;
-  background-color: brown;
-}
-.test8 .test9 {
-  height: 500px;
-  width: 100%;
-  background-color: blue;
-}
-
-.test10 {
-  height: 100vh;
-  width: 100vw;
-  background-color: burlywood;
-  margin-top: 20vh;
-}
-
 .imgexp {
   display: flex;
   justify-content: center;
-  padding-top: 60px;
-  height: 200vh;
+  padding-top: 15vh;
+  width: 100%;
+}
+.imgexp img {
+  width: 400px;
+}
+@media screen and (max-width: 800px) {
+  .imgexp img {
+    width: 300px;
+  }
+}
+
+.competence {
+  width: 90%;
+  display: flex;
+  margin: 16vh auto;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+  .competence {
+    width: 100%;
+  }
+}
+.competence h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+.competence .grid {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10vh auto;
+  gap: 64px;
+}
+@media screen and (max-width: 1024px) {
+  .competence .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  .competence .grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+}
+.competence .grid .content {
+  height: 500px;
+  width: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+  .competence .grid .content {
+    width: 300px;
+    height: 400px;
+  }
+}
+.competence .grid .content img {
+  border-radius: 10px;
+  object-fit: contain;
+  height: 50%;
+}
+.competence .grid .content p {
+  text-align: center;
+  padding: 2%;
+}
+
+footer {
+  background-color: black;
+  height: 40px;
+  width: 100%;
 }
 
 @media screen and (max-width: 800px) {

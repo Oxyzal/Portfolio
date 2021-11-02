@@ -194,6 +194,10 @@ body {
   margin-top: 20vh;
 }
 
+.imgexp {
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 800px) {
   :root {
     font-size: 11px;
@@ -287,5 +291,3 @@ body {
     width: 100%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

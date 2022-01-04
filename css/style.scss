@@ -18,24 +18,38 @@
 .desktop{
     position: fixed;
     width: 100%;
-    height: 55px;
+    height: 69px;
     line-height: 6vh;
-    z-index: 3;
     box-shadow: 0 0 10px rgba(26, 26, 26, 0.5);
-    background-color: none;
+    background-color: #143056;
         ul{
             display: flex;
             list-style: none;
             gap: 60px;
-            margin-left: 20%;
+            margin-left: 139px;
+            height: 69px;
+            li{
+                display: table;
+                text-align: center;
+            }
             li:last-child{
                 margin-left:auto;
                 margin-right:6vw;
+                border-radius: 25px 25px 25px 25px;
+                width: auto;
             }
             a{
                 color:rgb(255, 255, 255);
                 text-decoration: none;
-                font-size: 1rem;
+                font-size: 18px;
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+                span{
+                    background-color: #B9D6EB;
+                    border-radius: 25px 25px 25px;
+                    padding: 10px;
+                }
             }
         } 
 }

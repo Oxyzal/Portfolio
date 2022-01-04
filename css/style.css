@@ -23,26 +23,40 @@
 .desktop {
   position: fixed;
   width: 100%;
-  height: 55px;
+  height: 69px;
   line-height: 6vh;
-  z-index: 3;
   box-shadow: 0 0 10px rgba(26, 26, 26, 0.5);
-  background-color: none;
+  background-color: #143056;
 }
 .desktop ul {
   display: flex;
   list-style: none;
   gap: 60px;
-  margin-left: 20%;
+  margin-left: 139px;
+  height: 69px;
+}
+.desktop ul li {
+  display: table;
+  text-align: center;
 }
 .desktop ul li:last-child {
   margin-left: auto;
   margin-right: 6vw;
+  border-radius: 25px 25px 25px 25px;
+  width: auto;
 }
 .desktop ul a {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 18px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.desktop ul a span {
+  background-color: #B9D6EB;
+  border-radius: 25px 25px 25px;
+  padding: 10px;
 }
 
 .mobile {

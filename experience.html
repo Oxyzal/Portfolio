@@ -6,35 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Madi Steven</title>
 </head>
-<body>
-    <header class="desktop">
-        <nav>
-            <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="about.html">About</a></li>
-                <li> <a href="index.html"></strong><span class='red' style='font-size: 1.5rem;'><strong>Experience</strong></span></a></li>
-                <li> <a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/sliderburger.js"></script>
-    <header class="mobile">
-        <div class="burger">
-            <div class="rod"></div>
-            <div class="rod"></div>
-            <div class="rod"></div>
+<header class="desktop">
+    <nav>
+        <ul>
+            <li> <a href="index.html">Accueil</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li> <a href="experience.html"><span class='orange'>Expérience</span></a></li>
+        </ul>
+        <div class="logo">
+            
         </div>
-        <nav class="test">
-            <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="about.html">About</a></li>
-                <li> <a href="contact.html">Contact</a></li>
-            </ul>
+        <div class="btncontact">
+            <a class='centrer' href="contact.html"> <span>Me contactez</span></a>
+        </div>
+    </nav>
+</header>
+<header class="mobile">
+    <div class="container">
+        <nav class="navbar">
+            <div class="hamburger-menu">
+                <div class= "line line-1"></div>
+                <div class= "line line-2"></div>
+                <div class= "line line-3"></div>
+            </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a href="experience.html" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="btncontact">
+                            <a class="nav-link" href="contact.html"> <span>Me contactez</span></a>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <div class="bebe">
+                    <li class=>
+                        <a href="https://www.instagram.com/steven.oxyzal/" class="nav-link">Instagram</a>
+                    </li>
+                    <li >
+                        <a href="https://www.linkedin.com/in/steven-madi-3a1a9920a/" class="nav-link">Linkedin</a>
+                    </li>
+                    <li >
+                        <a href="https://github.com/Oxyzal/" class="nav-link">Github</a>
+                    </li>
+            </div>
         </nav>
-    </header>
+    </div>
+</header> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/sliderburger.js"></script>
+<body class="gradient moving-gradient"> 
     <div class="imgexp">
         <img class="boxshadow" src="assets/img/4EFC2608-4F81-4546-958F-79320893FA67.jpg" alt="">
     </div>
@@ -42,38 +73,42 @@
     <section class="competence">
         <h2>Compétence</h2> 
         <div class="grid">
-            <div class="content">
-                <img src="assets/img/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="">
+            <div data-aos="zoom-in-right" data-aos-duration="3000" class="content">
+                <img  src="assets/img/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="">
                 <p>JavaScript <br><br> J'ai toujours voulu être dev front. Mais qu'es-ce qu'un dev front sans des animations ? J'ai donc commencé par apprendre le JS natif trés simple puis j'ai découvert le jquery qui ma vraiment fasciner. Finalement je fais des recherches et découvert plein d'autre librairie.</p>
             </div>
-            <div class="content">
+            <div data-aos="zoom-in-down" data-aos-duration="3000" class="content">
                 <img src="assets/img/react-logo.png" alt="">
                 <p>React <br><br> Pour mon projet CityBlock j'ai du apprendre le react pour l'application mobile. Des choses trés simple et basique comme le système de connection et autre.</p>
             </div>
-            <div class="content">
+            <div data-aos="zoom-in-left" data-aos-duration="3000" class="content">
                 <img src="assets/img/CSS3_logo_and_wordmark.svg.png" alt="">
                 <p>CSS <br> <br>La base, utilisation de flexbox, grid et plein d'autre chose. Trés à l'aise avec le responsive et les media query. Et commencement du SASS</p>
             </div>
-            <div class="content">
+            <div class="content" data-aos="zoom-in-right" data-aos-duration="3000">
                 <img src="assets/img/5847f5bdcef1014c0b5e489c.png" alt="">
                 <p>HTML <br><br> Trés simple d'utilisation à 90%.</p>
             </div>
-            <div class="content">
+            <div class="content" data-aos="zoom-in-left" data-aos-duration="3000">
                 <img src="assets/img/PHP-logo.svg.png" alt="">
                 <p>PHP <br><br> Malgrès que je me spécialise dans le front, il faut bien être flexible ! Utilisation trés basique système de connection et d'article ! Utilisation de base de donnée.</p>
             </div>
         </div>
     </section>
     <section class="competence">
-        <h2>Projet Perso</h2> 
+        <h2 data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1500">Projet Perso</h2> 
         <div class="grid">
-            <div class="content">
+            <div data-aos="fade-down" data-aos-offset="300" data-aos-duration="1500" data-aos-easing="ease-in-sine" class="content">
                 <img src="assets/img/LogoCityBlockVectorisation.png" alt="">
                 <p>CityBlock <br><br> Jeu de plateau basé sur le pôle léonard de vinci et ses aléantours permettant au élèves du pôle et/ou les visiteurs du pôle en s'amusant</p>
             </div>
-            <div class="content">
+            <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="1500" data-aos-easing="ease-in-sine" class="content">
                 <img src="assets/img/Logo-IIM-fd-blanc.png" alt="">
                 <p>Site Perso <br><br> Site internet sur le personnage fictif que l'on souhaite pour passer en année 2 Dev Web (Html / css / Js /php)</p>
             </div>
         </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     </section>

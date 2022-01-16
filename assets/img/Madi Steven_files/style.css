@@ -59,6 +59,12 @@ body {
   display: table-cell;
   vertical-align: middle;
 }
+.desktop nav ul li a span {
+  background-color: #B9D6EB;
+  border-radius: 25px 25px 25px;
+  padding: 10px 30px;
+  color: black;
+}
 .desktop nav .logo {
   display: table;
   text-align: center;
@@ -96,6 +102,8 @@ body {
 }
 
 body {
+  background: #2d36fd;
+  background: linear-gradient(0deg, #2d36fd 0%, #22c1c3 100%);
   background-position: fixed;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -264,7 +272,6 @@ body {
     height: auto;
   }
   .container .navbar {
-    z-index: 99;
     width: 300px;
     height: 100%;
     background-color: #000000ed;
@@ -475,95 +482,6 @@ body {
   .competence .grid {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-.orange {
-  color: #f37814;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.blanc {
-  background-color: white;
-}
-
-.black {
-  background-color: black;
-}
-
-.contact {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-@media screen and (max-width: 1008px) {
-  .contact {
-    flex-wrap: wrap;
-  }
-}
-.contact .contact_image img {
-  height: 100%;
-  width: 100%;
-}
-.contact .contact_form {
-  margin-left: 7.8%;
-}
-.contact .contact_form h4 {
-  font-weight: 700 italic;
-  color: #101640;
-  font-size: 1em;
-  opacity: 60%;
-}
-.contact .contact_form p {
-  font-size: 0.75em;
-  color: #101640;
-  font-weight: 500 italic;
-  opacity: 60%;
-}
-.contact .contact_form h2 {
-  color: #101640;
-  font-size: 1.8em;
-  font-weight: 600;
-  margin-bottom: 50px;
-}
-.contact .contact_form article {
-  display: flex;
-  flex-direction: row;
-}
-@media screen and (max-width: 660px) {
-  .contact .contact_form article {
-    flex-wrap: wrap;
-  }
-}
-.contact .contact_form article div h3 {
-  color: #101640;
-  margin-top: 50px;
-  font-size: 1em;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-.contact .contact_form article div input {
-  width: 294px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
-.contact .contact_form article .contact_m {
-  margin-right: 3%;
-}
-.contact .contact_form a {
-  display: flex;
-  flex-direction: row;
-  margin-top: 90px;
-  margin-bottom: 90px;
-}
-.contact .contact_form a p {
-  font-size: 1em;
-  font-weight: 700;
-  color: #101640;
-  opacity: 100%;
-}
-.contact .contact_form a span {
-  margin-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,81 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Madi Steven</title>
 </head>
-<body>
-    <header class="desktop">
-        <nav>
-            <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="index.html">About</a></li>
-                <li> <a href="index.html"></strong><span class='red' style='font-size: 1.5rem;'><strong>Experience</strong></span></a></li>
-                <li> <a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/sliderburger.js"></script>
-    <header class="mobile">
-        <div class="burger">
-            <div class="rod"></div>
-            <div class="rod"></div>
-            <div class="rod"></div>
+<header class="desktop black">
+    <nav>
+        <ul>
+            <li> <a href="index.html">Accueil</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li> <a href="experience.html">Expérience</a></li>
+        </ul>
+        <div class="logo">
+            
         </div>
-        <nav class="test">
-            <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="about.html">About</a></li>
-                <li> <a href="experience.html">Experience</a></li>
-            </ul>
+        <div class="btncontact">
+            <a class='centrer' href="contact.html"> <span>Me contactez</span></a>
+        </div>
+    </nav>
+</header>
+<header class="mobile">
+    <div class="container">
+        <nav class="navbar">
+            <div class="hamburger-menu">
+                <div class= "line line-1"></div>
+                <div class= "line line-2"></div>
+                <div class= "line line-3"></div>
+            </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Accueil</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a href="experience.html" class="nav-link">Expérience</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="btncontact">
+                            <a class="nav-link" href="contact.html"> <span> Me contactez</span></a>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <div class="bebe">
+                    <li class=>
+                        <a href="https://www.instagram.com/steven.oxyzal/" class="nav-link">Instagram</a>
+                    </li>
+                    <li >
+                        <a href="https://www.linkedin.com/in/steven-madi-3a1a9920a/" class="nav-link">Linkedin</a>
+                    </li>
+                    <li >
+                        <a href="https://github.com/Oxyzal/" class="nav-link">Github</a>
+                    </li>
+            </div>
         </nav>
-    </header>
-    <section class="contactme">
-        <h1>Contactez-Moi</h1>
-        <form name="form" action="savecontact.php" method="POST">
-            <table class="form-style">
-                <tr>
-                    <td>
-                        <label>
-                            Votre nom <span class="required">*</span>
-                        </label>
-                    </td>
-                    <td>
-                        <input type="text" name="name_" class="long"/>
-                        <span class="error" id="errorname"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>
-                            Votre adresse e-mail <span class="required">*</span>
-                        </label>
-                    </td>
-                    <td>
-                        <input type="email" name="mail" class="long"/>
-                        <span class="error" id="erroremail"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label>
-                            Message <span class="required">*</span>
-                        </label>
-                    </td>
-                    <td>
-                        <textarea name="message" class="long field-textarea"></textarea>
-                        <span class="error" id="errormsg"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <input type="submit" value="Envoyer">      
-                        <input type="reset" value="Réinitialiser"> 
-                    </td>
-                </tr>
-                </table>
-            </form>
-        </section>
+    </div>
+</header> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/sliderburger.js"></script>
+<body class="blanc"> 
+    <main id="primary" class="site-main">
+        <div class="contact">
+            <div class="contact_image">
+                <img src="assets/img/12-etirements-faciles-pour-le-travail-de-bureau.jpg"alt="">
+            </div>
+            <div class="contact_form">
+                <h2>NOUS CONTACTER</h2>
+                <article>
+                    <div class="contact_m">
+                        <h3>NOM</h3>
+                        <input type="text" value="Votre nom">
+                    </div>
+                    <div>
+                        <h3>PRENOM</h3>
+                        <input type="text" value="Votre Prénom">
+                    </div>
+                </article>
+                <article>
+                    <div class="contact_m">
+                        <h3>EMAIL</h3>
+                        <input type="text" value="Votre adresse mail">
+                    </div>
+                    <div>
+                        <h3>TELEPHONE</h3>
+                        <input type="text" value="Votre numéro de téléphone">
+                    </div>
+                </article>
+                <article>
+                    <div class="contact_m">
+                        <h3>MESSAGE</h3>
+                        <input type="text" value="Votre message">
+                    </div>
+                </article>    
+                <a href="#"> 
+                    <p> Soumettre</p> 
+                    <span>
+                    </span>    
+                </a>
+                <h4>MON ADRESSE MAIL</h4>
+                <p>Madi-steven@hotmail.fr</p>
+            </div>
+        </div>
+
+
+</main>
     </body>
 </html> 
